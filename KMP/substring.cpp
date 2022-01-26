@@ -7,7 +7,7 @@ void TestCase(){
     string s; cin >> s;
     string t = "";
     // for(int i = 0; i < n; i++){
-    //     t += "?";
+    //             t += "?";
     // }
     cout << 1 << '\n';
 }
