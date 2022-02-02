@@ -36,7 +36,7 @@ void solve(){
 int32_t main(){
 	ios_base :: sync_with_stdio(false);
 	cin.tie(); cout.tie();
-	// freopen("input.txt", "r", stdin);
+	freopen("input.txt", "r", stdin);
 	int tt = 1; 
 	while(tt--){
 		solve();
