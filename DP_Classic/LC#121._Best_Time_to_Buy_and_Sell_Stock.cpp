@@ -23,7 +23,9 @@ public:
            cout << "dp[" << i << "][0" << "] = " << dp[i][0] << '\n';
        }
        
-       return max(dp[n][1], dp[n][0]);
+       int answer = max(dp[n][1], dp[n][0]);
+       if(answer < 0) return 0;
+       return answer;
 
     }
 };

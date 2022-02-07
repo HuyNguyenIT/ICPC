@@ -2,23 +2,22 @@
 
 using namespace std;
 
-
-void solve(){
-	
+using i64 = long long;
+ 
+void solve() {
+    
 }
-
-
-int32_t main(){	
-
-    ios_base :: sync_with_stdio(false);
-    cin.tie(); cout.tie(); 
-
-    freopen("input.txt", "r", stdin);
-
-    int t = 1; cin >> t;
-    while(t--){
+ 
+int main() {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    
+    int t = 1;
+    std::cin >> t;
+    
+    while (t--) {
         solve();
     }
-
+    
     return 0;
 }
