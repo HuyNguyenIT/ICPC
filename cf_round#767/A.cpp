@@ -1,36 +1,21 @@
-#include<bits/stdc++.h>
-
+#include <bits/stdc++.h>
 using namespace std;
-
-int const N = 1e5 + 111;
-
-#define int long long
-
-void TestCase(){
-    int n, k; cin >> n >> k;
-    vector<int> a(n), b(n);
-    for(auto&x : a) cin >> x;
-    for(auto&x : b) cin >> x;
-    vector<pair<int, int>> p;
-    for(int i = 0; i < n; i++){
-        p.push_back({a[i], b[i]});
+int main(){
+  int t;
+  cin >> t;
+  for (int i = 0; i < t; i++){
+    int n;
+    cin >> n;
+    if (n % 7 == 0){
+      cout << n << endl;
+    } else {
+      for (int j = 0; j < 10; j++){
+        int x = n - n % 10 + j;
+        if (x % 7 == 0){
+          cout << x << endl;
+          break;
+        }
+      }
     }
-    sort(p.begin(), p.end());
-
-    for(int i = 0; i < p.size(); i++){
-        if(k >= p[i].first){
-            k += p[i].second;
-        } else break;
-    }
-    cout << k << '\n';
-}
-
-int32_t main(){
-    ios_base :: sync_with_stdio(false); 
-    cin.tie(0); cout.tie();
-    // freopen("input.txt", "r", stdin);
-    int tt; cin >> tt;
-    while(tt--){
-        TestCase();
-    }
+  }
 }
