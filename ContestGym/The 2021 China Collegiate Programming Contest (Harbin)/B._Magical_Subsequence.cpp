@@ -49,7 +49,7 @@ int main() {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
     
-    freopen("input.txt", "r", stdin);
+    // freopen("input.txt", "r", stdin);
 
     int t = 1;
     // std::cin >> t;
