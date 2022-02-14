@@ -2,8 +2,8 @@
 
 using namespace std;
 
-using i64 = long long;
- 
+#define int long long 
+
 int solve(int a, int k) {
     while(a % 100 != 0 &&  k > 0 &&  a <= 100){
         a = a + a % 100;
@@ -55,7 +55,7 @@ int bruteForce(int a, int k){
     return a;
 } 
 
-int main() {
+int32_t main() {
     ios::sync_with_stdio(false);
     cin.tie();
     // freopen("input.txt", "r", stdin);

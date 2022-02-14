@@ -61,7 +61,7 @@ void bfs(vector<vector<char>> &v, pair<int, int> begin, pair<int, int> end, int 
         int x = position.first;
         int y = position.second;
         // cout << x << ' ' << y << ' ' << changes << '\n';
-        if(changes > 2) continue;
+        if(changes != mymap[position.first][position.second] || changes > 2) continue;
 
         for (int i = 0; i < 4; i++) {
             if(last_dir == 0){
